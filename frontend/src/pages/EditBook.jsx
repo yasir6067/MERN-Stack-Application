@@ -17,7 +17,7 @@ const EditBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://mern-stack-application-y80f.onrender.com/books/${id}`)
+      .get(`https://new-mern-stack-application.onrender.com/books/${id}`)
       .then((response) => {
         setAuthor(response.data.author);
         setPublishYear(response.data.publishYear);
@@ -39,7 +39,7 @@ const EditBook = () => {
     };
     setLoading(true);
     axios
-      .put(`https://mern-stack-application-y80f.onrender.com/books/${id}`, data)
+      .put(`https://new-mern-stack-application.onrender.com/books/${id}`, data)
       .then(() => {
         setLoading(false);
         navigate("/");
