@@ -4,6 +4,7 @@ import Spinner from "../components/Spinner";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 
+
 const DeleteBook = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const DeleteBook = () => {
   const handleDeleteBook = () => {
     setLoading(true);
     axios
-      .delete(`http://localhost:5656/books/${id}`)
+      .delete(`https://new-mern-stack-application.onrender.com/books/${id}`)
       .then(() => {
         setLoading(false);
         navigate("/");
