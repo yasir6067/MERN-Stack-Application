@@ -21,7 +21,7 @@ const CreateBooks = () => {
     };
     setLoading(true);
     axios
-      .post("https://new-mern-stack-application.onrender.com/books", data)
+      .post("https://mern-stack-application-y80f.onrender.com/books", data)
       .then(() => {
         setLoading(false);
         navigate("/");

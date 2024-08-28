@@ -13,7 +13,7 @@ const DeleteBook = () => {
   const handleDeleteBook = () => {
     setLoading(true);
     axios
-      .delete(`https://new-mern-stack-application.onrender.com/books/${id}`)
+      .delete(`https://mern-stack-application-y80f.onrender.com/books/${id}`)
       .then(() => {
         setLoading(false);
         navigate("/");
